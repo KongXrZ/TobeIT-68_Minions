@@ -53,7 +53,7 @@ def main():
     # User input
     minion_max = st.number_input("Enter max number of minions (5-26)", min_value=5, max_value=26, step=1)
     minion_have = st.number_input("Enter number of minions you have", min_value=1, step=1)
-    player_need = st.selectbox("Choose what you need", ["Item", "Block", "Enchanted Item", "Enchanted Block"]).lower()
+    player_need = st.selectbox("Choose what you need EX. 1 S Yes", ["Item", "Block", "Enchanted Item", "Enchanted Block"]).lower()
 
     tier_dict = {'1': 1, '2': 3, '3': 3, '4': 6, '5': 6, '6': 9, '7': 9, '8': 12, '9': 12, '10': 15, '11': 15}
     size_dict = {'s': 3, 'm': 9, 'l': 15, 'none': 0}
